@@ -43,26 +43,32 @@ class _MyAppState extends State<MyApp> {
             Question(_questions[_questionIndex]),
             Row(
               children: <Widget>[
-                RaisedButton(
-                  child: Text("Button 1"),
-                  onPressed: () {
-                    print("Button 1 pressed.");
-                    _buttonPressed();
-                  },
+                Expanded(
+                  child: RaisedButton(
+                    child: Text("Button 1"),
+                    onPressed: () {
+                      print("Button 1 pressed.");
+                      _buttonPressed();
+                    },
+                  ),
                 ),
-                RaisedButton(
-                  child: Text("Button 2"),
-                  onPressed: () {
-                    print("Button 2 pressed.");
-                    _buttonPressed();
-                  },
+                Expanded(
+                  child: RaisedButton(
+                    child: Text("Button 2"),
+                    onPressed: () {
+                      print("Button 2 pressed.");
+                      _buttonPressed();
+                    },
+                  ),
                 ),
-                RaisedButton(
-                  child: Text("Button 3"),
-                  onPressed: () {
-                    print("Button 3 pressed.");
-                    _buttonPressed();
-                  },
+                Expanded(
+                  child: RaisedButton(
+                    child: Text("Button 3"),
+                    onPressed: () {
+                      print("Button 3 pressed.");
+                      _buttonPressed();
+                    },
+                  ),
                 ),
               ],
             ),
